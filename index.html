@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+<head>
+	<title>Sydney Kink Calendar</title>
+
+	<meta name="description" content="Your source for Sydney's upcoming kink events">
+	<meta name="author" content="Jeremy Bensen @ SYD-PAH">
+	<meta property="og:title" content="Sydney Kink Calendar">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://www.sydneykinkcalendar.com">
+	<meta property="og:description" content="Your source for Sydney's upcoming kink events">
+	<!-- <meta property="og:image" content=""> -->
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<style>
+		body {
+			background: rgb(50, 50, 50);
+		}
+
+		.skc-body-container {
+			height: 100vh;
+
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+
+		.skc-content-container {
+			width: 100%;
+			max-width: 920px;
+			margin-left: auto;
+			margin-right: auto;
+
+			background: rgb(225, 225, 225);
+			border-radius: 8px;
+			padding: 20px;
+
+			text-align: center;
+		}
+		.skc-content-container h1 {
+			margin-top: 0px;
+			margin-bottom: 20px;
+		}
+
+		.skc-calendar-container {
+			display: flex;
+
+			align-items: center;
+			justify-content: center;
+
+			margin-left: auto;
+			margin-right: auto;
+		}
+		.skc-calendar-container .skc-calendar {
+			/*padding: 12px 15px;*/
+			padding: 5px;
+			border-radius: 8px;
+
+			background: #e3e9ff;
+
+			/*background: rgba(255, 255, 255, 0.1);*/
+			/*background: rgb(50,50,50);*/
+			/*background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, rgba(50,50,50,0) 100%);*/
+
+			/*background: linear-gradient(to top, rgba(50, 50, 50, 0) 10%, rgba(255, 255, 255, 0.1) 50%, rgba(50, 50, 50, 0) 90%),
+			            linear-gradient(to left, rgba(50, 50, 50, 0) 10%, rgba(255, 255, 255, 0.1) 50%, rgba(50, 50, 50, 0) 90%);*/
+
+
+		}
+	</style>
+</head>
+
+<body>
+	<div class="skc-body-container">
+		<div class="skc-content-container">
+			<h1>Sydney Kink Calendar</h1>
+
+			<div class="skc-calendar-container">
+				<iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23e3e9ff&ctz=Australia%2FSydney&showTitle=0&showPrint=0&src=ZXZlbnRzQHN5ZHBhaC5jb20&color=%23009688" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no" class="skc-calendar"></iframe>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
