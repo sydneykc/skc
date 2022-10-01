@@ -20,7 +20,7 @@
 		}
 
 		.skc-body-container {
-			/*height: 100vh;*/
+			min-height: 100vh;
 
 			display: flex;
 			align-items: center;
@@ -151,6 +151,9 @@
 			$(window).resize(function() {
 			  var newWidth = $(window).width();
 			  setCalendarSize(newWidth);
+
+			  // Set body container height to center it
+			  $('.skc-body-container').attr('min-height', window.innerHeight - 50);
 			});
 		}
 		init();
