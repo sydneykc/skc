@@ -15,11 +15,12 @@
 
 	<style>
 		body {
-			background: rgb(50, 50, 50);
+			background: black;
+			margin: 25px;
 		}
 
 		.skc-body-container {
-			height: 100vh;
+			/*height: 100vh;*/
 
 			display: flex;
 			align-items: center;
@@ -28,19 +29,30 @@
 
 		.skc-content-container {
 			width: 100%;
-			max-width: 920px;
+			max-width: 900px;
 			margin-left: auto;
 			margin-right: auto;
 
-			background: rgb(225, 225, 225);
+			background: rgb(240, 240, 240);
 			border-radius: 8px;
-			padding: 20px;
+			padding: 35px 20px 20px 20px;
 
-			text-align: center;
+			font-family: sans-serif;
 		}
 		.skc-content-container h1 {
+			text-align: center;
+
 			margin-top: 0px;
 			margin-bottom: 20px;
+		}
+		.skc-content-container .skc-text-container {
+			max-width: 800px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		.skc-content-container .skc-text-container a {
+			text-decoration: none;
+			color: #004ba0;
 		}
 
 		.skc-calendar-container {
@@ -58,15 +70,17 @@
 			border-radius: 8px;
 
 			background: #e3e9ff;
+		}
 
-			/*background: rgba(255, 255, 255, 0.1);*/
-			/*background: rgb(50,50,50);*/
-			/*background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, rgba(50,50,50,0) 100%);*/
+		.skc-footer-container {
+			text-align: center;
+			font-size: 0.75em;
+			color: grey;
 
-			/*background: linear-gradient(to top, rgba(50, 50, 50, 0) 10%, rgba(255, 255, 255, 0.1) 50%, rgba(50, 50, 50, 0) 90%),
-			            linear-gradient(to left, rgba(50, 50, 50, 0) 10%, rgba(255, 255, 255, 0.1) 50%, rgba(50, 50, 50, 0) 90%);*/
-
-
+			margin-top: 50px;
+		}
+		.skc-footer-container p {
+			margin: 0px;
 		}
 	</style>
 </head>
@@ -76,8 +90,25 @@
 		<div class="skc-content-container">
 			<h1>Sydney Kink Calendar</h1>
 
-			<div class="skc-calendar-container">
+			<div class="skc-text-container">
+				<p>
+					Below you'll find a calendar with upcoming activites from organisations within Sydney such as:
+				</p>
+				<ul>
+					<li>
+						<a href="https://www.sydpah.com" target="_blank">Sydney Pups & Handlers</a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="skc-calendar-container" style="margin-top: 30px;">
 				<iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23e3e9ff&ctz=Australia%2FSydney&showTitle=0&showPrint=0&src=ZXZlbnRzQHN5ZHBhaC5jb20&color=%23009688" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no" class="skc-calendar"></iframe>
+			</div>
+
+			<div class="skc-footer-container">
+				<p>
+					Website maintained by Jeremy Bensen of SYD-PAH.<br>For queries or to report issues, email <a href="mailto:sydneykinkcalendar@gmail.com" target="_blank">sydneykinkcalendar@gmail.com</a>
+				</p>
 			</div>
 		</div>
 	</div>
