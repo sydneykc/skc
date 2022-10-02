@@ -88,7 +88,7 @@
 		}
 	</style>
 
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.6.1.slim.min.js" integrity="sha384-MYL22lstpGhSa4+udJSGro5I+VfM13fdJfCbAzP9krCEoK5r2EDFdgTg2+DGXdj+" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -100,6 +100,7 @@
 				<p>
 					Below you'll find a calendar with upcoming activites from organisations within Sydney such as:
 				</p>
+
 				<ul>
 					<li>
 						<a href="https://www.sydpah.com" target="_blank">Sydney Pups & Handlers</a>
@@ -108,11 +109,13 @@
 			</div>
 
 			<div class="skc-calendar-container" style="margin-top: 30px;">
+				<!-- noscript message is handled by the calendar widget -->
+
 		        <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23e3e9ff&ctz=Australia%2FSydney&showTitle=0&showNav=1&showDate=1&showPrint=0&showTabs=1&src=ZXZlbnRzQHN5ZHBhaC5jb20&color=%23009688" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no" class="skc-calendar" id="skc-calendar-large"></iframe>
 
-		        <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23e3e9ff&ctz=Australia%2FSydney&mode=AGENDA&showTitle=0&showNav=1&showDate=1&showPrint=0&showTabs=1&src=ZXZlbnRzQHN5ZHBhaC5jb20&color=%23009688" style="border:solid 1px #777" width="600" height="600" frameborder="0" scrolling="no" class="skc-calendar" id="skc-calendar-medium" style="display: none;"></iframe>
+		        <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23e3e9ff&ctz=Australia%2FSydney&mode=AGENDA&showTitle=0&showNav=1&showDate=1&showPrint=0&showTabs=1&src=ZXZlbnRzQHN5ZHBhaC5jb20&color=%23009688" style="border:solid 1px #777; display: none" width="600" height="600" frameborder="0" scrolling="no" class="skc-calendar" id="skc-calendar-medium" style="display: none;"></iframe>
 
-		        <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23e3e9ff&ctz=Australia%2FSydney&mode=AGENDA&showTitle=0&showNav=1&showDate=0&showPrint=0&showTabs=1&src=ZXZlbnRzQHN5ZHBhaC5jb20&color=%23009688" style="border:solid 1px #777" width="520" height="600" frameborder="0" scrolling="no" class="skc-calendar" id="skc-calendar-small" style="display: none;"></iframe>
+		        <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23e3e9ff&ctz=Australia%2FSydney&mode=AGENDA&showTitle=0&showNav=1&showDate=0&showPrint=0&showTabs=1&src=ZXZlbnRzQHN5ZHBhaC5jb20&color=%23009688" style="border:solid 1px #777; display: none" width="520" height="600" frameborder="0" scrolling="no" class="skc-calendar" id="skc-calendar-small" style="display: none;"></iframe>
 			</div>
 
 			<div class="skc-footer-container">
